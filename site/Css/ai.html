@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Birthday Web App</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+      background-color: #f1f1f1;
+    }
+    
+    h1 {
+      color: #333;
+    }
+    
+    .container {
+      max-width: 600px;
+      margin: 0 auto;
+      padding: 20px;
+      background-color: #fff;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    }
+    
+    .input-group {
+      margin-bottom: 20px;
+    }
+    
+    .input-group label {
+      display: block;
+      margin-bottom: 5px;
+      color: #555;
+      font-weight: bold;
+    }
+    
+    .input-group input,
+    .input-group textarea {
+      width: 100%;
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      font-size: 16px;
+      color: #333;
+    }
+    
+    .input-group button {
+      padding: 10px 16px;
+      background-color: #4CAF50;
+      color: #fff;
+      border: none;
+      border-radius: 5px;
+      font-size: 16px;
+      font-weight: bold;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+    
+    .input-group button:hover {
+      background-color: #45a049;
+    }
+    
+    .message {
+      margin-top: 30px;
+      padding: 20px;
+      background-color: #4CAF50;
+      color: #fff;
+      border-radius: 5px;
+      font-size: 18px;
+      line-height: 1.4;
+    }
+    
+    .image-container {
+      margin-top: 30px;
+    }
+    
+    .image-container img {
+      max-width: 300px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Birthday Web App</h1>
+    <div class="input-group">
+      <label for="name">Enter your name:</label>
+      <input type="text" id="name" placeholder="Your name">
+    </div>
+    <div class="input-group">
+      <label for="age">Enter your age:</label>
+      <input type="number" id="age" placeholder="Your age">
+    </div>
+    <div class="input-group">
+      <label for="message">Enter a birthday message:</label>
+      <textarea id="message" placeholder="Your birthday message"></textarea>
+    </div>
+    <button onclick="showMessage()">Submit</button>
+    <div class="message" id="output"></div>
+    
+    <div class="image-container" id="imageContainer">
+      <button onclick="showImage()">Click to Open Image</button>
+    </div>
+  </div>
+  
+  <script>
+    function showMessage() {
+      var name = document.getElementById("name").value;
+      var age = document.getElementById("age").value;
+      var message = document.getElementById("message").value;
+      var output = document.getElementById("output");
+      
+      if (name === "" || age === "" || message === "") {
+        output.innerHTML = "Please fill in all fields.";
+        output.style.backgroundColor
+
+    </script>
+  </body>
+  </html>
+  
