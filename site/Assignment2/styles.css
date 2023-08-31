@@ -1,0 +1,78 @@
+*{
+	box-sizing: content-box;
+}
+
+h1{
+	text-align: center;
+	font-size: 3em;
+	font-family: cursive, sans-serif;
+	margin-top: 50px;
+	margin-bottom: 50px;
+}
+
+
+h2{
+	position: absolute;
+	text-align: center;
+	border: black 2px solid;
+	width:35%;
+	margin-bottom: 100px;
+	top: 0px;
+	right: 0px;
+	margin-top: 0px;
+	border-top: none;
+	border-right: none;
+	font-family: cursive, sans-serif;
+	
+}
+
+section{
+	width:30%;
+	text-align: justify;
+	float:left;
+	margin: 10px;
+	padding: 10px;
+	border: black 2px solid;
+	position:relative;
+	background-color:lightgrey ;
+	padding-top: 45px;
+	font-family: cursive,sans-serif;
+
+}
+
+.luffy{
+	background-color: #a90000;
+	color: #ffb300;
+}
+
+.zoro{
+	background-color: #003e07;
+	color: #28b61b;
+}
+
+.sanji{
+	background-color: #feff00;
+	color: #ffa600;
+}
+
+
+@media (max-width: 991px)
+ .king{
+    background: yellow;
+    width: 45%;
+    float: left;
+}
+  .blackleg{
+   background: yellow;
+    width: 95%;
+  }
+  }
+}
+
+@media (max-width: 768px) {
+ #phone{
+    background: red;
+    width: 95%;
+}
+}
+
