@@ -56,23 +56,29 @@ section{
 }
 
 
-@media (max-width: 991px)
+@media (max-width: 768px) 
+{
+ section{
+    background-color: red;
+    width: fit-content;
+    display: block;
+	}
+}
+
+
+@media (max-width: 991px) and (min-width: 768px)
+{
  .king{
     background: yellow;
-    width: 45%;
-    float: left;
-}
+    width: 40%;  
+    }
+  
   .blackleg{
    background: yellow;
-    width: 95%;
+    width: 86%;
   }
   }
 }
 
-@media (max-width: 768px) {
- #phone{
-    background: red;
-    width: 95%;
-}
-}
+
 
