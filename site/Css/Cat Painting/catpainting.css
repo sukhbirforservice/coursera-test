@@ -11,4 +11,16 @@ body {
   height:180px;
   border:1px solid #000;
   border-radius:46%;
+  background: linear-gradient(#5e5e5e 85%, #45454f 100%);
+
 }
+
+/*To create a linear gradient background in CSS, you can use the linear-gradient() function. The syntax is: 
+background-image: linear-gradient(direction, color1, color2, ...)
+The linear-gradient() function must include: 
+Two color values
+A starting point
+A direction (or an angle)
+You can use the linear-gradient() function as a value to any property that accepts images, such as: background-image, background, border-image. 
+A linear gradient is a gradient that fades from one color to another over a line. For example, a gradient fading from yellow to purple. 
+You can find linear gradients at: Gradient Backgrounds, WebGradients.com.*/
