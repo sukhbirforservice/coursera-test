@@ -167,6 +167,7 @@ You can find linear gradients at: Gradient Backgrounds, WebGradients.com.*/
   position: absolute;
   top: 134px;
   left: 109px;
+  transform: rotate(3deg);
 }
 
 
