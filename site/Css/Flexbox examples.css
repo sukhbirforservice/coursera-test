@@ -1,0 +1,78 @@
+1.
+
+.box {
+  display: flex;
+}
+
+<div class="box">
+  <div>One</div>
+  <div>Two</div>
+  <div>Three
+    <br>has
+    <br>extra
+    <br>text
+  </div>
+</div>
+
+
+2.
+
+.box {
+  display: flex;
+  flex-direction: row-reverse;
+}
+
+<div class="box">
+  <div>One</div>
+  <div>Two</div>
+  <div>Three</div>
+</div>
+
+
+3.
+
+.box {
+  display: flex;
+}
+
+.one {
+  flex: 1 1 auto;
+}
+
+.two {
+  flex: 1 1 auto;
+}
+
+.three {
+  flex: 1 1 auto;
+}
+
+<div class="one">One</div>
+  <div class="two">Two</div>
+  <div class="three">Three</div>
+</div>
+
+
+4.
+
+.box {
+  display: flex;
+}
+
+.one {
+  flex: 1;
+}
+
+.two {
+  flex: 1;
+}
+
+.three {
+  flex: 1;
+}
+
+<div class="box">
+  <div class="one">One</div>
+  <div class="two">Two</div>
+  <div class="three">Three</div>
+</div>
