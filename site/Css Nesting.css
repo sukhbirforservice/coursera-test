@@ -1,0 +1,42 @@
+.nesting {
+  color: hotpink;
+}
+
+.nesting > .is {
+  color: rebeccapurple;
+}
+
+.nesting > .is > .awesome {
+  color: deeppink;
+}
+
+
+.nesting {
+  color: hotpink;
+
+  > .is {
+    color: rebeccapurple;
+
+    > .awesome {
+      color: deeppink;
+    }
+  }
+}
+
+<div class="demo">
+  <div class="sm triangle pink"></div>
+  <div class="sm triangle blue"></div>
+  <div class="square blue"></div>
+  <div class="sm square pink"></div>
+  <div class="sm square blue"></div>
+  <div class="circle pink"></div>
+  …
+</div>
+
+.parent {
+  color: blue;
+
+  .child {
+    color: red;
+  }
+}
