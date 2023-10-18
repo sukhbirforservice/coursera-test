@@ -42,3 +42,21 @@ and it will still work the same.
 
 This is a beginner level example for Optimising the code.
 
+
+--------------------------------------------------------------------------------------
+
+Gradients in CSS are a way to transition between colors across the distance of an element. They are applied to the background property and the syntax looks like this:
+
+gradient-type(
+  color1,
+  color2
+);
+In the example, color1 is solid at the top, color2 is solid at the bottom, and in between it transitions evenly from one to the next. In .bb1a, add a background property below the background-color property. Set it as a gradient of type linear-gradient that uses --building-color1 as the first color and --window-color1 as the second.
+
+.bb1a {
+  width: 70%;
+  height: 10%;
+  background-color: var(--building-color1);
+  background: linear-gradient(var(--building-color1), var(--window-color1));
+}
+
