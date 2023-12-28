@@ -1,0 +1,212 @@
+*{
+box-sizing: border-box;
+
+}
+
+html{
+  font-size: ;
+background-color: whitesmoke;
+}
+
+header {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  height: 10%;
+  background-color: whitesmoke;
+}
+
+header h1{
+  font-family: sans-serif;
+  margin: 2% 0 0 8%;
+}
+
+header ul {
+  display: flex;
+  list-style: none;
+  gap: 20%;
+  position: absolute;
+  top: 5%;
+  right: 5%;
+  width: 30%;
+}
+
+a{
+text-decoration: none;
+color: black;
+font-family: sans-serif;
+}
+ 
+ body{
+   padding-top: 6%;
+   font-family: sans-serif;
+ }
+
+.handcraft{
+  text-align: center;
+}
+
+#email{
+  font-size: 1rem;
+  width: 20%;
+  height: 4%;
+  background-color: #ffffff;
+  }
+
+.button{
+  text-align: center;
+  padding-top: 15px;
+}
+
+.button input{
+  font-size: 15px;
+  width: 150px;
+  height: 30px;
+  font-weight: bold;
+  font-family: sans-serif;
+  background-color: #f1c40f;
+  border: none;
+}
+
+.button input:hover{
+  background-color: #e89f02;
+  transition: 2s;
+  cursor:pointer; 
+}
+
+::placeholder{
+  font-size: 80%;
+  padding: 5px 0 5px 5px;
+}
+
+.features {
+  padding-top: 100px;
+}
+
+.feature h2{
+  font-size: 30px;
+}
+
+h2 i{
+  padding-right: 60px;
+}
+
+.feature p{
+  padding-left: 97px;
+  margin-top: -20px;
+}
+
+.features div {
+  padding: 15px 50px 30px 300px;
+}
+
+iframe{
+  margin: 40px 100px 40px 475px;
+}
+
+.pricing {
+  display: flex;
+}
+
+/* old footer css
+footer ul {
+  display: flex;
+  list-style: none;
+  gap: 10%;
+  position: absolute;
+  right: 5%;
+  width: 30%;
+  bottom: -443px;
+}
+
+footer p{
+  position: absolute;
+  left: 73%;
+  bottom: -480px;
+  padding-bottom: 18px;
+  color: darkgrey;   
+}
+*/
+
+footer ul {
+  display: flex;
+    list-style: none;
+    gap: 2%;
+    width: 98%;
+    justify-content: flex-end;
+    padding-top: 11px;
+}
+
+footer p{
+    display: flex;
+    justify-content: flex-end;
+    width: 98%;
+    margin-top: -11px;
+    padding-bottom: 10px;
+    color: grey   
+}
+
+.pricing div{
+  width: 350px;
+    border: 1px solid black;
+    height: 274px;
+    margin-right: 20px;
+    border-radius: 5px;
+}
+
+.pricing{
+  justify-content: center;
+    padding: 30px 0 30px 
+}
+
+footer{
+  display: block;
+    background-color: ddd !important;
+    width: 74%;
+    margin: auto;
+}
+
+.pricing div h4 {
+    font-size: 20px;
+    background-color: lightgrey;
+    height: 50px;
+    margin: auto;
+    text-align: center;
+    padding-top: 15px;
+}
+
+.pricing ul {
+  list-style: none;
+  padding: 0;
+}
+
+.pricing ul li:nth-child(1){
+  font-size: 20px;
+  font-weight: bold;
+  text-align: center;
+  padding-bottom: 20px;
+}
+
+.pricing li{
+  text-align: center;
+  padding-bottom: 10px;
+
+}
+
+
+button{
+  width: 150px;
+    height: 30px;
+    font-weight: bold;
+    font-family: sans-serif;
+    background-color: #f1c40f;
+    border: none;
+    text-align: center;
+    margin: 15px 0 0 100px;
+}
+
+button:hover{
+  background-color: #e89f02;
+  transition: 2s;
+  cursor:pointer; 
+}
