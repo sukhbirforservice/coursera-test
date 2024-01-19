@@ -1,0 +1,120 @@
+
+.triangle1{
+	
+	border-bottom: 50vw solid wheat;
+    border-left: 50vw solid transparent;
+    border-right: 50vw solid transparent;
+    animation: wheel 5s 2;
+}
+
+.triangle2{
+	border-bottom: 30vw solid black;
+    border-left: 30vw solid transparent;
+    border-right: 30vw solid transparent;
+    position: absolute;
+    left: 126px;
+    transform: scaleY(-1);
+    top: 150px;
+    animation: wheel 5s 2;
+   
+    
+}
+
+.triangle3{
+	border-bottom: 30vw solid black;
+    border-left: 30vw solid transparent;
+    border-right: 30vw solid transparent;
+    position: absolute;
+    left: 127px;
+    left: 5px;
+    transform: scaleY(-1);
+    top: 272px;
+    animation: wheel 5s 2;
+   
+} 
+
+.triangle4{
+	border-bottom: 30vw solid black;
+    border-left: 30vw solid transparent;
+    border-right: 30vw solid transparent;
+    position: absolute;
+    left: 248px;
+    transform: scaleY(-1);
+    top: 272px;
+    animation: wheel 5s 2;
+
+
+}
+
+.innertriangles:hover{
+	cursor: progress;
+}
+
+.triangle2:hover{
+    animation: wheel 5s 2;
+}
+
+.triangle3:hover{
+    animation: wheel 5s 2;
+} 
+
+.triangle4:hover{
+	 animation: wheel 5s 2;
+}
+
+
+@keyframes wheel {
+   0% {
+     transform: rotate(0deg);
+   }
+
+   25% {
+     transform: rotate(60deg);
+   } 
+
+   50% {
+     transform: rotate(120deg);
+   }
+
+   75% {
+     transform: rotate(0deg);
+   }
+
+   100% {
+     transform: rotate(360deg);
+   }
+
+   
+}
+  
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Hello, world!</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <meta name="description" content="" />
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <h1>Hello, triangles!</h1>
+
+<div class="triangle1">
+  <div class="innertriangles">
+  <span class="triangle2"></span>
+<span class="triangle3"></span>
+<span class="triangle4" style="
+    border-bottom: 30vw solid black;
+    border-left: 30vw solid transparent;
+    border-right: 30vw solid transparent;
+    position: absolute;
+    left: 248px;
+    transform: scaleY(-1);
+    top: 272px;
+"></span>
+</div>
+</div>
+</body>
+</html>
