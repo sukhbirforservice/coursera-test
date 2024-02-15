@@ -56,7 +56,100 @@ function getFloor(x) {
     return integer;
 }
 
-
-
-
 module.exports = getFloor;
+
+
+//Conditionals 
+
+In programming it's often necessary to write code that depends on some condition to be true.
+
+For a good example, let's imagine we're building a website! 
+
+We want users to be sent to the dashboard only if they are logged in. Otherwise we should send them to the login page:
+
+if(loggedIn) {
+    // loggedIn is true
+    goToDashboard();
+}
+else {
+    // loggedIn is false
+    goToLogin();
+}
+
+You could think of this logic as: If the user is logged in, then send them to the dashboard. If not, send them to the login page.
+
+Our logic is branched based on the condition of whether or not the user is logged in. We can look at this from the perspective of a flow chart:
+
+//1: Is Equal
+
+function isEqual(a, b) {
+    if(a === b){
+        return true;  }
+}
+
+module.exports = isEqual;
+
+
+// is not equal
+function isNotEqual(a, b) {
+    if(a !== b) {
+    return true;
+} else {
+    return false;
+        }
+}
+module.exports = isNotEqual;
+
+//else
+
+function isNotEqual(a, b) {
+    if(a !== b) {
+    return true;
+} else {
+    return false;
+        }
+}
+module.exports = isNotEqual;
+
+// greater than
+
+function greater(first, last) {
+    if (first > last){
+        return first;
+    } if (last > first){
+        return last;
+    } if (first = last){
+        return;
+    }
+}
+
+module.exports = greater;
+
+
+// is enough
+
+function isEnough(cost, money) {
+    if (money >= cost){
+    return true;
+    }   {
+        return false;
+    }
+}
+
+module.exports = isEnough;
+
+// else if 
+function canAccess(purchasedSubscription, freeTrial) {
+    if (purchasedSubscription){
+        return true;
+    }
+    else if (freeTrial) {
+        return true;
+    }
+
+    else {
+        return false;
+    }
+}
+
+module.exports = canAccess;
