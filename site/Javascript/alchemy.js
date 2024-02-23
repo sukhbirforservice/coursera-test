@@ -76,9 +76,11 @@ else {
     goToLogin();
 }
 
+/*
 You could think of this logic as: If the user is logged in, then send them to the dashboard. If not, send them to the login page.
 
 Our logic is branched based on the condition of whether or not the user is logged in. We can look at this from the perspective of a flow chart:
+*/
 
 //1: Is Equal
 
