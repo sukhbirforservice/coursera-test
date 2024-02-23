@@ -153,3 +153,38 @@ function canAccess(purchasedSubscription, freeTrial) {
 }
 
 module.exports = canAccess;
+
+
+// Var a = b, undefined a Q from X
+function test(){
+    var a = b = 5;
+}
+test();
+console.log(b);
+console.log(a);
+
+Output
+5
+a is not defined
+error
+
+// As mentioned in the previous two stages, += is short-hand for str = str + "a". This will append our two strings together with "a" being added to the end of str.
+
+// Age code in playcode.io 
+function scream(n) {
+    let str = "Your age is ";
+    const year = "2024"; 
+    return (str +(year - n));
+}
+
+console.log (scream(2002));
+
+// Scream function to print a string multiple times
+function scream(n) {
+    let str = "";
+    for (let i = 1; i <= n; i++)
+    { str += "";}
+    return str;
+}
+
+console.log(scream());
