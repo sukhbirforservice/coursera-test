@@ -64,3 +64,31 @@ function scream(n) {
 }
 
 console.log(scream(6));
+
+
+// function to find if a number is even or not
+function isEven(num){
+let a = num % 2;
+
+    if (a <= 0){
+        return true;
+    }  else {
+        return false;
+    }  
+}
+
+
+//the top double function to find the largest double for the value that is below the top.
+function topDouble(value, top) {
+
+    let a = value * 2;
+    while (a < top) {
+        value = a;
+        a = value * 2;
+    }
+    return value;
+}
+
+module.exports = topDouble;
+
+// why does the above code doesn't work
