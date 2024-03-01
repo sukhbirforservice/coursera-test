@@ -92,3 +92,16 @@ function topDouble(value, top) {
 module.exports = topDouble;
 
 // why does the above code doesn't work
+
+
+// function to find the sum all of numbers, starting from 1, up to and including num.
+
+function maxSum(num) {
+    let count = 0;
+    for (let i = 1; i <= num; i++) {
+        count += i;
+ }
+ return count;
+}
+
+module.exports = maxSum;
