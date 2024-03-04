@@ -135,6 +135,42 @@ function checkNumber(num) {
 }
 
 module.exports = checkNumber;
+
+// The function maxSum takes a number argument num. Your goal is find the sum all of numbers, starting from 1, up to and including num.
+
+function maxSum(num) {
+    let count = 0;
+    for (let i = 1; i <= num; i++) {
+        count += i;
+ }
+ return count;
+}
+
+module.exports = maxSum;
+
+// STRING MANIPULATION
+
+// Looking up Characters
+
+"Hello".charAt(1); // e
+"Hello"[1]; // e
+
+/* Complete the startsWithX function to determine if the first character of the string argument is the lower-case x.
+If the first character is x return true. If not, return false.
+*/
+
+function startsWithX(string) {
+let a = string.charAt(0);
+    if (a === "x"){
+        return true;
+    } else {
+        return false;
+    }
+    
+}
+
+module.exports = startsWithX;
+
  
 
 
