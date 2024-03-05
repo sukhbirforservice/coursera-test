@@ -171,6 +171,31 @@ let a = string.charAt(0);
 
 module.exports = startsWithX;
 
+
+function startsWithX(string) {
+let a = string.charAt(0);
+    if (a === "x"){
+        return true;
+    } else {
+        return false;
+    }
+    
+}
+
+module.exports = startsWithX;
+
+
+function startsWithX(string) {
+let a = string.charAt(0);
+    if (a === "x"){
+        return true;
+    } else {
+        return false;
+    }
+    
+}
+
+module.exports = startsWithX;
  
 
 
