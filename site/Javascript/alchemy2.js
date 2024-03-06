@@ -199,4 +199,35 @@ module.exports = startsWithX;
  
 
 
+// Is all X
 
+isAllX("Xx"); // true
+isAllX("xAbX"); // false
+
+
+function isAllX(string) {
+
+    for (let i = 0; i < string.length; i++) {
+        let b = i;
+        let a = string.charAt(b);
+        if (a !== "x" && a !== "X") {
+            return false;
+        }
+    }
+    return true;
+}
+
+module.exports = isAllX;
+
+
+// solution 
+function isAllX(string) {
+    for(let i = 0; i < string.length; i++) {
+        if (string[i].toLowerCase() !== "x") {
+            return false;
+        }
+    }
+    return true;
+}
+
+module.exports = isAllX;
