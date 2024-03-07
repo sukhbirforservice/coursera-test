@@ -231,3 +231,41 @@ function isAllX(string) {
 }
 
 module.exports = isAllX;
+
+// Find the First X, In the string argument find the index of the first lower-case "x" and return it.
+
+"Hello".indexOf("e"); // 1
+"abca".indexOf("a"); // 0 
+"abc".indexOf("q"); // -1 
+"happy dog bark".indexOf("dog"); // 6
+
+function findFirstX(string) {
+    a = string.indexOf("x")
+
+    return a;
+}
+
+console.log(findFirstX("xxfhf"));
+module.exports = findFirstX;
+
+// Split at X
+
+"An apple".slice(0,2); // An
+"The 40 Thieves".slice(4,8); // 40 T
+
+"Please Slice Me".slice(7); // Slice Me
+
+function splitAtX(string) {
+    a = string.indexOf("x");
+    b = string.slice(0, a);
+    c = string.length;
+    d = string.slice(a + 1, c);
+
+    if (b.length < d.length) {
+        return d;
+    } else {
+        return b;
+    }
+}
+
+module.exports = splitAtX;
