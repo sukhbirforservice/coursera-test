@@ -269,3 +269,19 @@ function splitAtX(string) {
 }
 
 module.exports = splitAtX;
+
+
+
+//Arrays
+
+const array = [70, 80, 65, 100, 90, 95];
+Then we would be able to loop over the array, summing together each test score:
+
+let total = 0; 
+for(let i = 0; i < array.length; i++) {
+    total += array[i];
+}
+
+Once we have a total sum of test scores, we can simply divide it by the array length (the number of tests in our population), to get our average score:
+
+const average = total / array.length;
