@@ -285,3 +285,16 @@ for(let i = 0; i < array.length; i++) {
 Once we have a total sum of test scores, we can simply divide it by the array length (the number of tests in our population), to get our average score:
 
 const average = total / array.length;
+
+
+// Create Arrays
+
+const numbers = [1, 2, 3, 4, 5];
+const booleans = [true, false, true, true];
+const strings = ["happy", "go", "lucky"];
+// nested arrays
+const nested = [[1, 2, [1, 2]], 2];
+
+const array = [3, 2 , 1]; // <-- create an array here!
+
+module.exports = array;
