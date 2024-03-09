@@ -298,3 +298,25 @@ const nested = [[1, 2, [1, 2]], 2];
 const array = [3, 2 , 1]; // <-- create an array here!
 
 module.exports = array;
+
+// Has one Array
+const element = array[0];
+const arr = ['h','a','p','p','y'];
+for(let i = 0; i < arr.length; i++) {
+    console.log(arr[i]);
+}
+console.log( hasOne([1,2,3]) ); // true
+console.log( hasOne([1,1,1]) ); // true
+console.log( hasOne([4,5,6]) ); // false
+
+
+function hasOne(array) {
+    for (let i = 0; i < array.length; i++) {
+        if (array[i] == 1) {
+            return true;
+        } 
+    } 
+        return false;
+}
+
+module.exports = hasOne;
