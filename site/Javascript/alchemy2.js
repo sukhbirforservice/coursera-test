@@ -320,3 +320,17 @@ function hasOne(array) {
 }
 
 module.exports = hasOne;
+
+function returnOccurrence(array, num){
+  for (let i = array.length; i >=0; i--) {
+        if (array[i] == 1) {
+            return true;
+        } 
+    } 
+        return false;
+}
+
+}
+
+module.exports = returnOccurrence;
+// verify this
