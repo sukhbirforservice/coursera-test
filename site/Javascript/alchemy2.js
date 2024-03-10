@@ -334,3 +334,61 @@ function returnOccurrence(array, num){
 
 module.exports = returnOccurrence;
 // verify this
+
+// sumEven
+
+const result = average([80,90,98,100]); 
+console.log( result ); // 92
+function average(array) {
+    let total = 0;
+    for(let i = 0; i < array.length; i++) {
+        total += array[i];
+    }
+    return (total / array.length);
+}
+
+examples
+console.log( sum([1]) ); // 0
+console.log( sum([1, 2, 3, 4]) ); // 6
+console.log( sum([1, 1, 4, 1, 1]) ); // 4
+
+
+function sumEven(array) {
+    let count = 0;
+    for (let i = 0; i < array.length; i++){
+        let a = array[i]%2; 
+        if(a <= 0) {
+            count = count + array[i];
+        }
+    } return count; 
+}
+
+module.exports = sumEven;
+
+// unique arrays
+
+function greaterThanFive(array) {
+    const newArray = [];
+    for(let i = 0; i < array.length; i++) {
+        const element = array[i];
+        // is this element greater than 5?
+        if(element > 5) {
+            // yes, push this element on our array
+            newArray.push(element);
+        }
+    }
+    return newArray;
+}
+
+function unique(array) {
+    const newArray = [];
+    for (let i = 0; i < array.length; i++) {
+        const element = array[i];
+        if (newArray.indexOf(element) === -1) {
+            newArray.push(element);
+        }
+    }
+    return newArray;
+}
+
+module.exports = unique;
