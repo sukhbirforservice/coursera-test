@@ -390,5 +390,24 @@ function unique(array) {
     }
     return newArray;
 }
-
 module.exports = unique;
+
+
+// Add one
+
+const array = [1,2,3];
+array[0] = 5;
+console.log(array); // [5,2,3]
+const array = [1,2,3];
+addOne(array); 
+console.log(array); // [2,3,4]
+
+function addOne(array) {
+        for (let i = 0; i < array.length; i++){
+        array[i] = array[i] + 1
+    } 
+}
+
+module.exports = addOne;
+
+//
