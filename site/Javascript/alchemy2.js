@@ -410,4 +410,44 @@ function addOne(array) {
 
 module.exports = addOne;
 
-//
+// Remove Occurrences
+
+function greaterThanFive(array) {
+    for(let i = array.length - 1; i >= 0; i--) {
+        if(array[i] > 5) {
+            array.splice(i, 1);
+        }
+    }
+}
+
+
+const array = [1, 2, 3, 1];
+removeOccurrences(array, 1);
+console.log( array ); // [2, 3]
+
+
+// Let's use splice to remove elements that are greater than 1:
+
+const array = [1,2,3];
+for(let i = 0; i < array.length; i++) {
+    if(array[i] > 1) {
+        array.splice(i, 1);
+    }
+}
+console.log(array); // [1, 3]
+
+
+// Given an array of integers and a number, num, find all the occurrences of the number and remove it from the array.
+
+Modify the array directly and do not return anything from this function.
+
+function removeOccurrences(array, num) {
+ for (let i = array.length-1; i >= 0; i--)
+ {
+     if (array[i] === num)  {
+         array.splice(i, 1);
+     }   
+ }   
+}
+
+module.exports = removeOccurrences;
