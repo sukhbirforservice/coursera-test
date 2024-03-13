@@ -451,3 +451,68 @@ function removeOccurrences(array, num) {
 }
 
 module.exports = removeOccurrences;
+
+// Objects
+
+const person = {
+    hairColor: 'brown',
+    toes: 10,
+    grumpy: true
+}
+
+This object shows that we can use numbers, strings and booleans as values.
+
+This person has "brown" hairColor, 10 toes and is grumpy, unfortunately. 
+
+We can retrieve these values by key:
+
+console.log( person.toes ); // 10
+console.log( person.hairColor ); // brown
+
+
+const team = {
+    name: "Mets",
+    wins: 86,
+    inPlayoffs: false,
+};
+
+
+const order = {
+    pizzas: 2,
+    extraCheese: true,
+    deliveryInstructions: 'Do not ring the bell',
+};
+
+
+const team = {
+    name: 'Meths',
+    wins: 89,
+    inPlayoffs: false,
+};
+module.exports = order;
+
+const team = {
+    name: "Mets",
+    wins: 86,
+    inPlayoffs: false,
+};
+
+console.log( team.name ); // Mets
+console.log( team['name'] ); // Mets
+
+const order = {
+    pizzas: 3,
+    extraCheese: true,
+    deliveryInstructions: "Round the back, please!",
+};
+ The function should take this order and retrieve the number of pizzas:
+
+const totalPizzas = numberOfPizzas(order);
+console.log( totalPizzas ); // 3
+
+function numberOfPizzas(order) {
+    return order.pizzas;
+}
+
+
+module.exports = numberOfPizzas;
