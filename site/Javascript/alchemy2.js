@@ -516,3 +516,71 @@ function numberOfPizzas(order) {
 
 
 module.exports = numberOfPizzas;
+
+
+// Many Orders
+const team = {
+    name: "Mets",
+    wins: 86,
+    inPlayoffs: false,
+};
+In a league, we might have many teams:
+
+const teams = [team1, team2, team3];
+for(let i = 0; i < teams.length; i++) {
+    console.log(teams[i].name); 
+}
+
+const orders = [
+    { pizzas: 3 },
+    { pizzas: 5 },
+    { pizzas: 10 }
+];
+ For this example above, we'd expect 18 total pizzas:
+
+const totalPizzas = numberOfPizzas(orders);
+console.log( totalPizzas ); // 18
+
+
+// Function to add pizzas
+function numberOfPizzas(orders) {
+    let totalPizzas = 0;
+    for (let i = 0; i < orders.length; i++) {
+        totalPizzas = orders[i].pizzas + totalPizzas;
+    }  return totalPizzas;
+}
+
+// Typed orders
+
+const card = {
+    suit: 1,
+    value: 5
+}
+What is this card's suit? We know the value is 1, but what does that mean? 
+
+Let's define CARD_SUITS:
+
+const CARD_SUITS = {
+    DIAMONDS: 0,
+    HEARTS: 1,
+    SPADES: 2,
+    CLUBS: 3
+}
+Using this object we can clearly label our card suit:
+
+const card = {
+    suit: CARD_SUITS.HEARTS,
+    value: 5
+}
+
+
+const ORDER_TYPES = {
+    PIZZA: 0, 
+    FRIES: 2, 
+    SANDWICHES: 3,
+}
+
+module.exports = ORDER_TYPES;
+
+// Add by Type
+
