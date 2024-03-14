@@ -584,3 +584,21 @@ module.exports = ORDER_TYPES;
 
 // Add by Type
 
+
+
+// diffrent case
+function Case(string){
+		let newString = "";
+		for(let i=0; i< string.length; i++){
+			const a = string.indexOf(string[i])%2;
+			if (a === 0){
+				let element = string[i].toLowerCase();
+				newString = newString +element;
+			} else {
+				let element = string[i].toUpperCase();
+				newString = newString +element;
+			}	
+		} return newString;
+	}
+
+	console.log(Case("Honey"));
