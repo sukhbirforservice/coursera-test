@@ -602,3 +602,61 @@ function Case(string){
 	}
 
 	console.log(Case("Honey"));
+
+
+// Add by Type
+
+const ORDER_TYPES = require('./orderTypes');
+const orders = [
+    { pizzas: 3, type: ORDER_TYPES.PIZZA },
+    { wings: 12, type: ORDER_TYPES.WINGS },
+];
+ In this example we would only sum up pizzas from the first order!
+
+const totalPizzas = numberOfPizzas(orders);
+console.log( totalPizzas ); // 3
+
+
+const ORDER_TYPES = {
+    PIZZA: 0, 
+    FRIES: 2, 
+    SANDWICHES: 3,
+}
+
+module.exports = ORDER_TYPES;
+
+const ORDER_TYPES = require('./orderTypes');
+
+function numberOfPizzas(orders) {
+    let totalPizzas = 0;
+    for (let i = 0; i < orders.length; i++) {
+        if (orders[i].type == ORDER_TYPES.PIZZA)
+        totalPizzas = orders[i].pizzas + totalPizzas;
+    }  return totalPizzas;
+}
+
+module.exports = numberOfPizzas;
+
+// Object KEys
+
+const object = { a: 1, b: 2, c: 3 } 
+for(let key in object) {
+    console.log(key);
+}
+Over three iterations this will log a, b and c which are the keys of object.
+
+Additionally, we can use some methods on the Object constructor itself, which will return an array of the requested data:
+
+const object = { a: 1, b: 2, c: 3 } 
+console.log( Object.keys(object) ); // ['a', 'b', 'c']
+console.log( Object.values(object) ); // [1, 2, 3]
+
+
+function numberOfKeys(object) {
+    let a = Object.keys(object);
+    let b = a.length;
+    return b;
+
+} 
+
+module.exports = numberOfKeys;
