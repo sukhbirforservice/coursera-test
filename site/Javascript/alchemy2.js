@@ -660,3 +660,45 @@ function numberOfKeys(object) {
 } 
 
 module.exports = numberOfKeys;
+
+
+// Secret Key
+const person = {
+    name: "James",
+    age: 22
+}
+
+person.name = "Sally";
+person["age"] = 30;
+
+console.log( person.name ); // Sally
+console.log( person.age ); // 30
+ Just like retrieval we can use the . or [] notation.
+
+We can also remove keys completely:
+
+const person = { 
+    name: "Bob"
+}
+
+delete person.name;
+
+console.log( person.name ); // undefined
+
+function removeSecret(object) {
+    object.secret = undefined;
+}
+
+module.exports = removeSecret
+
+// Shortest String
+
+function shortestString(str1, str2) {
+    if (str1.length < str2.length){
+    return str1;
+} else {
+    return str2;
+}
+}
+
+module.exports = shortestString;
