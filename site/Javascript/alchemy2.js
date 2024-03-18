@@ -702,3 +702,37 @@ function shortestString(str1, str2) {
 }
 
 module.exports = shortestString;
+
+
+// Half Value
+
+function halfValue(numbers) {
+let newArray = [];
+    for (let i = 0; i < numbers.length; i++){
+        element = numbers[i]/2;
+        odd = numbers[i]%2;
+        if (odd == 0){
+            newArray.push(element);
+        } else {
+            newArray.push(Math.round(element)); 
+        }
+    } return newArray;
+}
+
+module.exports = halfValue;
+
+// Your Goal: Count the C's
+The function countC takes a string str as its only argument.
+
+This function should return the number of c's found in the string. It must count both lower-case c and upper-case C.
+
+function countC(str) {
+let count = 0;
+for (let i = 0; i < str.length; i++){
+    if (str[i].toLowerCase() == "c"){
+        count++;
+    }
+} return count;
+}
+
+module.exports = countC;
