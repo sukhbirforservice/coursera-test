@@ -736,3 +736,32 @@ for (let i = 0; i < str.length; i++){
 }
 
 module.exports = countC;
+
+// Count Vowels
+
+function countVowels(str) {
+let count = 0;
+    for(let i = 0; i < str.length; i++){
+        if ('aeiou'.includes(str[i].toLowerCase())){
+            count++;
+        } 
+    } return count;
+}
+
+
+module.exports = countVowels;
+
+// Reverse
+
+Write a function reverse that takes a string as an argument and returns a string with all the letters reversed.
+
+For example, reverse("cat") would return the string "tac".
+
+function reverse(string) {
+  let a = ""; 
+  for(let i=string.length-1; i >= 0;i--){
+a += string[i];
+  } return a;
+}
+
+module.exports = reverse;
