@@ -831,3 +831,35 @@ function countElements(elements){
     } return object;
     }
 module.exports = countElements;
+
+// Player Hand Score
+
+The function playerHandScore that takes in a string of face cards (Jack, Queen, and King only) and returns the total score of the players hand.
+
+The cards are represented by the first letter in the name of the card:
+
+A "K" is 4 points
+A "Q" is 3 points
+A "J" is 2 points
+Example Usage:
+
+console.log( playerHandScore("K") ); // 4
+console.log( playerHandScore("KJ") ); // 6
+console.log( playerHandScore("KQQ") ); // 10 
+
+Code Below: 
+function playerHandScore(string) {
+    const facecards = {
+        K: 4,
+        Q: 3,
+        J: 2,
+    }
+    let count = 0;
+
+    for(let i=0; i < string.length; i++){
+        if (string[i]){
+            count += facecards[string[i]];  
+        }
+    } return count;
+}
+module.exports = playerHandScore;
