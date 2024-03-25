@@ -42,3 +42,19 @@ console.log(false || true); // true
 console.log(true || true); // true
 console.log(false || false); // false
 
+
+Q. We willEat if we have pizza, donuts or cookies! 
+
+Complete the willEat function. The three arguments will be boolean values (true or false). If any of them are true, return true.
+
+function willEat(hasPizza, hasDonuts, hasCookies) {
+    if (hasPizza || hasDonuts || hasCookies){
+        return true;
+    } else return false;
+}
+
+// more simpler way
+
+function willEat(hasPizza, hasDonuts, hasCookies) {
+    return hasPizza || hasDonuts || hasCookies;
+}
