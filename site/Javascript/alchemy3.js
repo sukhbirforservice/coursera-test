@@ -93,3 +93,8 @@ If no value is provided for x, return 0.
 
  Be careful with order of operations here! In the expression x || y * z the y * z will evaluate before x || y unless you use a parenthesis: (x || y) * z.
 
+function double(x) {
+    return x * 2 || 0;
+}
+
+module.exports = double;
