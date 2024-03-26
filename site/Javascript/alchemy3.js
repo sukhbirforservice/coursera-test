@@ -145,3 +145,13 @@ function canBreathe(isConnected, hasOxygen, aboveWater) {
 return (isConnected && hasOxygen) || aboveWater;
 }
 
+// Guard Operator
+
+const user = { name: 'bob' }
+console.log(user && user.name); // bob
+
+const user2 = undefined;
+console.log(user2 && user2.name); // undefined
+
+const user2 = undefined;
+console.log(user2.name);
