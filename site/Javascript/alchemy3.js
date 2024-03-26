@@ -92,9 +92,56 @@ console.log(result); // 0
 If no value is provided for x, return 0.
 
  Be careful with order of operations here! In the expression x || y * z the y * z will evaluate before x || y unless you use a parenthesis: (x || y) * z.
-
+// Logical operator as Default Operator
 function double(x) {
     return x * 2 || 0;
 }
 
-module.exports = double;
+module.exports = double;|
+
+//AND operator
+
+Another important logical operator is &&, which is called Logical AND:
+
+console.log(true && true); // true
+console.log(true && false); // false
+console.log(false && true); // false
+console.log(false && false); // false
+ Notice that both values must be true for the expression to evaluate to true. We need this to be true AND that to be true as well.
+
+We can, of course, do the same thing with variables:
+
+let a = true;
+let b = true;
+
+console.log(a && b); // true
+
+b = false;
+
+console.log(a && b); // false
+console.log(b && a); // false
+
+If the diver is still aboveWater, they can breathe regardless of the tank connection and oxygen:
+
+canBreathe(false, false, true); // true
+canBreathe(true, false, true); // true
+canBreathe(true, true, true); // true
+If they are not aboveWater, they need to be connected to the tank and the tank needs oxygen in order to breathe:
+
+canBreathe(true, false, false); // false
+canBreathe(true, true, false); // true
+
+Solution.
+1st attempt:
+function canBreathe(isConnected, hasOxygen, aboveWater) {
+if (aboveWater){
+return true;
+} else if(isConnected && hasOxygen){
+return true;
+} else return false;
+}
+2nd attempt:
+function canBreathe(isConnected, hasOxygen, aboveWater) {
+return (isConnected && hasOxygen) || aboveWater;
+}
+
