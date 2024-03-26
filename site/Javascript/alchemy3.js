@@ -155,3 +155,10 @@ console.log(user2 && user2.name); // undefined
 
 const user2 = undefined;
 console.log(user2.name);
+
+
+function friendName(friend) {
+    return friend && friend.name;
+}
+
+module.exports = friendName;
