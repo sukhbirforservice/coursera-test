@@ -190,3 +190,23 @@ module.exports = carCrossing;
 function carCrossing(aCrossing, bCrossing) {
     return (aCrossing && !bCrossing) || (bCrossing && !aCrossing);
 }
+
+const error1 = new Error("Something bad happened!");
+const error2 = Error("Something bad happened!");
+
+const a = 3;
+
+if(a === 3) {
+    throw new Error("we dont want a to be 3");
+}
+
+// <-- we never reach this line
+
+const a = 3;
+
+if(a === 3) {
+    throw new Error("we dont want a to be 3");
+}
+
+// <-- we never reach this line
+
