@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	
+	<title>China's Search Bar</title>
+	<style>
+		.input{
+			display: flex;
+			justify-content: center;
+			margin-top: 30px;
+		}
+
+		.buttons{
+			display: flex;
+			justify-content: center;
+			margin-top: 30px;
+		}
+
+		.lowercase{
+			padding-right: 50px;
+		}
+
+	</style>
+</head>
+<body>
+		<h1 style="text-align: center; color: maroon;"> China's Search Bar for Lowercase and Uppercase</h1>
+		<div class="input"> <input type="Search" name="" placeholder="Add your text here" minlength="10"></div>
+<div class="buttons">
+	<span class="lowercase">	<button onclick="function function_Case(string) {
+		// body...
+		let newString = "";
+		for(let i=0; i< string.length; i++){
+			const a = string.indexOf(string[i])%2;
+			if (a === 0){
+				let element = string[i].toLowerCase();
+				newString = newString +element;
+			} else {
+				let element = string[i].toUpperCase();
+				newString = newString +element;
+			}	
+		} return newString;
+		"> lowercase</button>	</span>
+<span class="uppercase">	<button> UPPERCASE</button>	</span>
+</div>
+
+
+<script type="text/javascript">
+
+	function Case(string){
+		let newString = "";
+		for(let i=0; i< string.length; i++){
+			const a = string.indexOf(string[i])%2;
+			if (a === 0){
+				let element = string[i].toLowerCase();
+				newString = newString +element;
+			} else {
+				let element = string[i].toUpperCase();
+				newString = newString +element;
+			}	
+		} return newString;
+	}
+
+	console.log(Case("Honey"));
+	
+</script>
+</body>
+</html>
