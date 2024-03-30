@@ -210,3 +210,26 @@ if(a === 3) {
 
 // <-- we never reach this line
 
+// Catch Error
+
+const text = readFile("book");
+
+try {
+    readFile("book"); 
+}
+catch(ex) {
+    console.log(ex); // EISDIR: illegal operation
+}
+
+function catchError(fn) {
+    try {
+        fn();    
+    }
+    catch(fn){
+        return Error;
+    }
+    return false;
+    
+}
+
+module.exports = catchError;
