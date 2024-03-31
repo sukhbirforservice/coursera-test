@@ -302,3 +302,26 @@ function toNumber(string) {
 }
 
 module.exports = toNumber;
+
+
+// TO string
+
+const a = 123;
+
+console.log(a.toString()); // "123"
+console.log(String(a)); // "123"
+
+console.log(false.toString()); // "false"
+
+console.log(123 + ""); // "123"
+console.log(true + ""); // "true"
+
+console.log(2 + "2"); // "22"
+
+// Given two values a and b, combine them together as strings and return the result. The values may be a number, a boolean or a string.
+
+function combineToString(a, b) {
+    return a + b.toString();
+}
+
+module.exports = combineToString;
