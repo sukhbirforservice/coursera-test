@@ -226,10 +226,53 @@ function catchError(fn) {
         fn();    
     }
     catch(fn){
-        return Error;
+        return fn;
     }
     return false;
     
 }
 
 module.exports = catchError;
+
+// Start an error
+
+Type Error
+Commonly thrown when the variable is not the expected type for the operation. Here's a couple examples:
+
+const x = 3;
+
+x();
+ Throws TypeError: x is not a function.
+
+let b;
+
+b.prop;
+ Throws TypeError: Cannot read property 'prop' of undefined
+
+Reference Error
+Thrown in cases where the variable is not defined. More technically, the reference cannot be found:
+
+z();
+ Throws ReferenceError: z is not defined.
+
+Syntax Error
+Thrown in cases where the code is not valid JavaScript:
+
+const a = 3;
+
+a.72;
+ Throws SyntaxError: Unexpected number.
+
+ If you use a transpiler like Babel JS this code may not pass the compilation step due to invalid syntax.
+
+Range Error
+Thrown when a value is passed to a function where the value is not within the intended range of accepted values. For example, an array initializer:
+
+new Array(Infinity)
+ Throws RangeError: Invalid array length.
+
+function startError() {
+ let b = "a";
+
+ return a;   
+} // This throws reference error.
