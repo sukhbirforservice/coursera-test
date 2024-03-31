@@ -276,3 +276,29 @@ function startError() {
 
  return a;   
 } // This throws reference error.
+
+
+TYPE CONVERSION
+const string = "2"
+console.log(Number(string)); // 2
+
+const string = "hello"
+console.log(Number(string)); // NaN
+
+const string = "2";
+console.log(+string); // 2
+
+const string2 = "hello";
+console.log(+string2); // NaN
+
+// Given a string, convert it to a number. If the string is not a number, return 0.
+
+function toNumber(string) {
+    let a = Number(string);
+
+    if(!a){
+        return 0;
+    } else return a;
+}
+
+module.exports = toNumber;
