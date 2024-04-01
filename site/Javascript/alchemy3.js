@@ -347,3 +347,22 @@ function isTruthy(a) {
 }
 
 module.exports = isTruthy;
+
+// Loosely equals
+console.log(3 === 3); // true
+console.log("apple" === "orange"); // false
+
+console.log("2" === 2); // false
+
+console.log("2" == 2); // true
+
+ Your Goal: Is Loosely Equal?
+Return true if a and b are loosely equal to each other. If not, return false.
+
+function looseEquals(a, b) {
+    if (a == b){
+        return true;
+    } else return false;
+}
+
+module.exports = looseEquals;
