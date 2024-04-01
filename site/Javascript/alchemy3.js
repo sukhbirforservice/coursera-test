@@ -325,3 +325,25 @@ function combineToString(a, b) {
 }
 
 module.exports = combineToString;
+
+
+// Is truthy
+
+console.log(Boolean(2)); // true
+console.log(Boolean("")); // false
+
+if(3) {
+    console.log('3 is truthy!');
+}
+
+Given some value a return whether or not the value is truthy.
+
+Falsey values: false, 0, "", null, undefined, and NaN.
+
+function isTruthy(a) {
+    if (!a) {
+        return false;
+    } else return true;
+}
+
+module.exports = isTruthy;
