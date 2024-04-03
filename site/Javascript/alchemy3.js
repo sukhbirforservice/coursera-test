@@ -366,3 +366,19 @@ function looseEquals(a, b) {
 }
 
 module.exports = looseEquals;
+
+// Object to JSON
+
+const person = '{"name":"Jim"}';
+
+const person = JSON.stringify({ name: "Jim" });
+
+console.log(person); // {"name":"Jim"}
+
+function toJSON(obj) {
+  return JSON.stringify(obj);
+} 
+
+module.exports = toJSON;
+
+
