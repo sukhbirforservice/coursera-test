@@ -381,4 +381,33 @@ function toJSON(obj) {
 
 module.exports = toJSON;
 
+// Valid JSON
+
+const itemJSON = `{
+    "type": "food",
+    "edible": true,
+    "quantity": 2
+}`
+
+
+const item = JSON.parse(itemJSON);
+
+console.log(item.type); // food
+console.log(item.edible); // true
+
+const item = JSON.parse(itemJSON);
+
+console.log(item.type); // food
+console.log(item.edible); // true
+
+const personJSON = `
+    {
+        "name": "Mondey D. Luffy",
+        "age": 19,
+        "isReal": false
+    } 
+`;
+
+module.exports = personJSON;
+
 
