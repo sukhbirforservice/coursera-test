@@ -410,4 +410,17 @@ const personJSON = `
 
 module.exports = personJSON;
 
+// Either not both Function
+
+function eitherNotBoth(num) {
+    if (num % 3 == 0 && num % 5 == 0) {
+        return false;
+    } else if (!num % 3 == 0 && num % 5 == 0 || num % 3 == 0 &&
+        !num % 5 == 0) {
+        return true;
+    }
+}
+
+
+
 
