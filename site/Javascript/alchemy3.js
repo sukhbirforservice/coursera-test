@@ -421,6 +421,73 @@ function eitherNotBoth(num) {
     }
 }
 
+// Chai code 
+const { assert } = require('chai');
+const eitherNotBoth = require('../eitherNotBoth');
+
+describe('eitherNotBoth', () => {
+    describe('divisible by 3 but not 5', () => {
+        it('should return true', () => {
+            assert.equal(eitherNotBoth(3), true);
+        });
+
+        it('should return true', () => {
+            assert.equal(eitherNotBoth(9), true);
+        });
+
+        it('should return true', () => {
+            assert.equal(eitherNotBoth(18), true);
+        });
+    });
+
+    describe('divisible by 5 but not 3', () => {
+        it('should return true', () => {
+            assert.equal(eitherNotBoth(5), true);
+        });
+
+        it('should return true', () => {
+            assert.equal(eitherNotBoth(10), true);
+        });
+
+        it('should return true', () => {
+            assert.equal(eitherNotBoth(20), true);
+        });
+    });
+
+    describe('divisible by 5 and 3', () => {
+        it('should return false', () => {
+            assert.equal(eitherNotBoth(15), false);
+        });
+
+        it('should return false', () => {
+            assert.equal(eitherNotBoth(30), false);
+        });
+
+        it('should return false', () => {
+            assert.equal(eitherNotBoth(60), false);
+        });
+    });
+})
+
+
+
+
+
+function fizzBuzz(numbers) {
+    let str = "";
+for (let i = 0; i < numbers.length; i++){
+    let num = numbers[i];
+    if (num % 3 == 0 && num % 5 == 0) {
+        str += "fizzbuzz";
+    } else if (!num % 3 == 0 && num % 5 == 0 || num % 3 == 0 &&
+        !num % 5 == 0) {
+        return true;
+    }
+    return str;
+}
+}
+
+// Check if it is correct
 
 
 
