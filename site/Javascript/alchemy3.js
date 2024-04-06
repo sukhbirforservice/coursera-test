@@ -489,5 +489,16 @@ for (let i = 0; i < numbers.length; i++){
 
 // Check if it is correct
 
+function toCelsius(fahrenheit) {
+  return (5/9) * (fahrenheit-32);
+}
+
+let value = toCelsius(77);
+
+function toCelsius(fahrenheit) {
+  return (5/9) * (fahrenheit-32);
+}
+
+let value = toCelsius;
 
 
