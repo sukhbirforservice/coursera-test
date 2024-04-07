@@ -501,4 +501,14 @@ function toCelsius(fahrenheit) {
 
 let value = toCelsius;
 
+let x = '101010';
+
+parseInt(x, 2) // 42
+The toString() method also handles non-integers and negative numbers. For example:
+
+x = -101010
+parseInt(x, 2); // -42
+
+x = 101010.101010;
+parseInt(x, 2); // 42
 
