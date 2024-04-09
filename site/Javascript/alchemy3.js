@@ -512,3 +512,25 @@ parseInt(x, 2); // -42
 x = 101010.101010;
 parseInt(x, 2); // 42
 
+
+
+  // Checking if a user is eligible for a discount based on their age
+let userAge = 25;
+let discountEligible = false;
+
+if (userAge >= 60) {
+    console.log("You qualify for a senior discount!");
+    discountEligible = true;
+} else if (userAge < 18) {
+    console.log("You qualify for a student discount!");
+    discountEligible = true;
+} else {
+    console.log("Sorry, you are not eligible for any discounts.");
+}
+
+// Now, let's use the discount eligibility status
+if (discountEligible) {
+    console.log("Please proceed to checkout to avail your discount.");
+} else {
+    console.log("You can proceed to checkout without any discount.");
+}
