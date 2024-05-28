@@ -24,3 +24,19 @@ function Celebrity(name) {
 }
 
 module.exports = Celebrity;
+
+CallBack Function 
+
+function forEach(arr, callback) {
+    // for each element in the arr, run the callback, passing in the element
+    for(let i = 0; i < arr.length; i++) {
+        callback(arr[i], i);
+    }
+    // Return the modified array if needed, otherwise, you can return undefined explicitly
+    return arr;
+}
+
+// Example usage
+console.log(forEach([1,2,4,4], (element, index) => {
+    console.log(`Element at index ${index} is ${element}`);
+}));
